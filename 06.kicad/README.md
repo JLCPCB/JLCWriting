@@ -39,6 +39,21 @@ If installation worked, you could see a blue JLCPCB tools icon on the toolbar of
 
 ## Design the PCB with RP2040
 
+> _Immature poets imitate: mature poets steal._ by T.S. Eliot
+
+Just like graphics designers start from templates and software developers start from boilerplates, hardware designers can also start from a template or existing designs.
+There are already plethora of resources we can use, including [the ofiicial Raspberry Pico design][5].
+To help you to choose the right startpoint, the following table summarizes some open-source hardware designs at the time of this writing.
+
+Project/Board Name | Author | Resource | Designed with| Note
+-------------------|--------|------------|--------------|-----
+Raspberry Pico | Raspberry Pi Foundation | [Design File][5] | Allegro | The official hardware design of Raspberr Pico
+Pro Micro RP2040 | SparkFun Electronics | [GitHub][6] | Eagle | Arduino Pro Micro footprint
+Thing Plus RP2040 | SparkFun Electronics | [GitHub][7] | Eagle | Feather footprint
+ItsyBitsy RP2040 | Adafruit Industries | [GitHub][8] | Eagle | ItsyBitsy footprint
+RPi Pico Debugger Shoe | Shawn Hymel | [GitHub][9] | KiCAD | Raspberry Pico footprint
+
+
 
 ---
 
@@ -46,3 +61,8 @@ If installation worked, you could see a blue JLCPCB tools icon on the toolbar of
 [2]: https://github.com/ShawnHymel/rpi-pico-debugger-shoe "RPi Pico Debugger Shoe by Shawn Hymel"
 [3]: https://www.kicad.org/download/ "KiCAD Official Download Page"
 [4]: https://github.com/Bouni/kicad-jlcpcb-tools "KiCAD JLCPCB Tools plugin by Bouni"
+[5]: https://datasheets.raspberrypi.com/pico/RPi-Pico-R3-PUBLIC-20200119.zip "Raspberry Pico Design File"
+[6]: https://github.com/sparkfun/SparkFun_Pro_Micro-RP2040 "SparkFun Pro Micro RP2040"
+[7]: https://github.com/sparkfun/SparkFun_Thing_Plus-RP2040 "SparkFun Thing Plus RP2040"
+[8]: https://github.com/adafruit/Adafruit-ItsyBitsy-RP2040-PCB "Adafruit ItsyBitsy RP2040 PCB"
+[9]: https://github.com/ShawnHymel/rpi-pico-debugger-shoe "RPi Pico Debugger Shoe"
