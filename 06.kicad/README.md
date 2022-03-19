@@ -1,4 +1,4 @@
-# (DRAFT) [JLCPCB][1] SMT Assembly service - Raspberry Pico RP2040 KiCAD Design
+# [JLCPCB][1] SMT Assembly service - Raspberry Pico RP2040 KiCAD Design
 
 In this article, we will explore how to get a KiCAD design fabricated and assembled by [JLCPCB][1] SMT Assembly service.
 
@@ -97,7 +97,7 @@ The problem comes from the BOM list file.
 * Often the BOM file is edited manually after generating to meet the stock status of part suppliers. This can cause the BOM file format broken.
 * JLCPCB SMT Assembly requires to select parts from [JLCPCB SMT Parts Library][11]. It has global sourcing feature in [part manager][11], it takes some lead time for the parts sourced from global suppliers to be ready for assembly.
 
-To make this easier, we installed [KiCAD JLCPCB tools][4] in the [Prerequisites][#Prerequisites] section.
+To make this easier, we installed [KiCAD JLCPCB tools][4] already.
 
 ---
 
