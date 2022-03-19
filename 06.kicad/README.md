@@ -1,7 +1,6 @@
 # (DRAFT) [JLCPCB][1] SMT Assembly service - Raspberry Pico RP2040 KiCAD Design
 
 In this article, we will explore how to get a KiCAD design fabricated and assembled by [JLCPCB][1] SMT Assembly service.
-We'll use [RPi Pico Debugger Shoe][2]as a starting template.
 
 
 ## Prerequisites
@@ -37,7 +36,8 @@ Install [KiCAD JLCPCB tools][4] on KiCAD as described in the doc.
 
 If installation worked, you could see a blue JLCPCB tools icon on the toolbar of PCB Editor.
 
-## Design the PCB with RP2040
+
+## Starting from an Existing Design
 
 > _Immature poets imitate: mature poets steal._ by T.S. Eliot
 
@@ -53,7 +53,34 @@ Thing Plus RP2040 | SparkFun Electronics | [GitHub][7] | Eagle | Feather footpri
 ItsyBitsy RP2040 | Adafruit Industries | [GitHub][8] | Eagle | ItsyBitsy footprint
 RPi Pico Debugger Shoe | Shawn Hymel | [GitHub][9] | KiCAD | Raspberry Pico footprint
 
+We'll use [RPi Pico Debugger Shoe][2]as a starting template, because
+* it's designed with KiCad
+* it has the same pinout as the official Raspberry Pico board
+* this article is not for replacing other Raspberry Pico design howto guides like [the official guide][10].
 
+But you can choose other resources as there are ways of importing Eagle and Allego designs from KiCad, or even you can create the design from scratch.
+
+
+## Editing the design
+
+Since we started from an existing design, let's say _editing the design_ instead of _designing the hardware_.
+
+First of all download and open the design in your KiCad.
+Some may do it by simple mouse clicing on the web browser, others would do it using Git command line.
+No matter of how you downloaded it, you could see the following result after opening it.
+
+<center>
+<img src="./images/kicad-project-opened.png" style="width: 66%">
+<img src="./images/kicad-3d-view.png" style="width: 66%">
+</center>
+
+You could change whatever in the design as your need.
+But before publishing and using it in production, be sure to check about the license of the original project.
+
+We will assume that you changed something and ready to go for prototyping with the [JLCPCB][1] SMT Assmebly service.
+
+
+## Generating the Files for JLCPCB
 
 ---
 
@@ -66,3 +93,4 @@ RPi Pico Debugger Shoe | Shawn Hymel | [GitHub][9] | KiCAD | Raspberry Pico foot
 [7]: https://github.com/sparkfun/SparkFun_Thing_Plus-RP2040 "SparkFun Thing Plus RP2040"
 [8]: https://github.com/adafruit/Adafruit-ItsyBitsy-RP2040-PCB "Adafruit ItsyBitsy RP2040 PCB"
 [9]: https://github.com/ShawnHymel/rpi-pico-debugger-shoe "RPi Pico Debugger Shoe"
+[10]: https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf "Hardware design with RP2040"
