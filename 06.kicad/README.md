@@ -114,9 +114,11 @@ For example, we'll choose RP2040 in the list.
 <img src="./images/kicad-empty-lcsc.png" style="width: 66%" />
 <img src="./images/kicad-searching-rp2040.png" style="width: 66%" />
 <img src="./images/kicad-bom-filled.png" style="width: 66%" />
+<img src="./images/kicad-bom-all-filled.png" style="width: 66%" />
 </center>
 
-
+After repeating these steps for all the parts you want to assemble, you could get the BOM list is filled with the right information.
+We can assure that our BOM is the most updated and has no shortage issue because we checked JLCPCB's stock status in live while filling in the BOM list.
 
 ---
 
