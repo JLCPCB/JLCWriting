@@ -97,7 +97,30 @@ The problem comes from the BOM list file.
 * Often the BOM file is edited manually after generating to meet the stock status of part suppliers. This can cause the BOM file format broken.
 * JLCPCB SMT Assembly requires to select parts from [JLCPCB SMT Parts Library][11]. It has global sourcing feature in [part manager][11], it takes some lead time for the parts sourced from global suppliers to be ready for assembly.
 
-To make this easier, we installed [KiCAD JLCPCB tools][4] already.
+To make this easier, we installed [KiCAD JLCPCB tools][4] already in the beginning.
+We can start using this handy tool now.
+
+<center>
+<img src="./images/kicad-launch-jlcplugin.png" style="width: 66%">
+</center>
+
+On the opened popup window named __JLCPCB Tools__, you would see the BOM table with empty LCLC column.
+As you might know if you have some experience in JLCPCB ordering, [JLCPCB parts library][11] is linked to the [LCSC][13] parts.
+
+You need to choose part (one or multiple) in the list then click __Select part__ button on the right sidebar.
+For example, we'll choose RP2040 in the list.
+
+<center>
+<img src="./images/kicad-empty-lcsc.png" style="width: 66%">
+</center>
+
+This is the very essential part of this article.
+
+<center>
+<img src="./images/kicad-searching-rp2040.png" style="width: 66%">
+</center>
+
+
 
 ---
 
@@ -113,3 +136,4 @@ To make this easier, we installed [KiCAD JLCPCB tools][4] already.
 [10]: https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf "Hardware design with RP2040"
 [11]: https://jlcpcb.com/parts/HOT "JLCPCB SMT Parts Library"
 [12]: https://smt.jlcpcb.com/HOT/smtPrivateLibrary?index=1
+[13]: https://lcsc.com/
