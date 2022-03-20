@@ -113,12 +113,38 @@ For example, we'll choose RP2040 in the list.
 <center>
 <img src="./images/kicad-empty-lcsc.png" style="width: 66%" />
 <img src="./images/kicad-searching-rp2040.png" style="width: 66%" />
-<img src="./images/kicad-bom-filled.png" style="width: 66%" />
-<img src="./images/kicad-bom-all-filled.png" style="width: 66%" />
 </center>
 
 After repeating these steps for all the parts you want to assemble, you could get the BOM list is filled with the right information.
 We can assure that our BOM is the most updated and has no shortage issue because we checked JLCPCB's stock status in live while filling in the BOM list.
+
+<center>
+<img src="./images/kicad-bom-filled.png" style="width: 66%" />
+</center>
+
+After you finished filling the BOM list, just click the __Generate fabrication files__.
+The files are generated in the `jlcpcb` folder in the project's root.
+You may need to compress teh `jlcpcb/geber` folder to upload to the ordering form, if the zip file is not generated automatically (for example, as `Geber-<your-project-name>.zip`).
+
+<center>
+<img src="./images/kicad-jlc-files-generated.png" style="width: 66%" />
+</center>
+
+Now we have all the 3 files ready to upload to the [JLCPCB][1] SMT Assembly service page.
+* `Geber-<your-project-name>.zip`
+* `BOM-<your-project-name>.csv`
+* `POS-<your-project-name>.csv`
+
+
+## Conclusion and Further Readings
+
+We've come through how to make a KiCad-designed RP2040 PCB ready to be made by the [JLCPCB][1] SMT Assembly service.
+Although KiCad and RP2040 are mainly discussed, the above method can be used for any different kind of PCB designs.
+For example, you can choose one of your own KiCad project to generate JLCPCB-compitible fabrication files.
+
+If you have any questions directly related to JLCPCB, please read [JLCPCB SMT Assembly FAQs][14] first. Most of common questions are already answered.
+
+Thank you for reading to this end of long text!
 
 ---
 
@@ -135,3 +161,4 @@ We can assure that our BOM is the most updated and has no shortage issue because
 [11]: https://jlcpcb.com/parts/HOT "JLCPCB SMT Parts Library"
 [12]: https://smt.jlcpcb.com/HOT/smtPrivateLibrary?index=1
 [13]: https://lcsc.com/
+[14]: https://support.jlcpcb.com/article/83-smt-assembly-faqs "SMT Assembly FAQs"
