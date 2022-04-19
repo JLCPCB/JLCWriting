@@ -13,5 +13,5 @@ Source on GitHub | Status | Published Link
 [JLCPCB SMT Assembly Process](./03.smt-process/) | waiting for publishing | .
 [JLCPCB (for wikipedia](./05.wikipedia/README.md) | waiting for publishing | .
 [JLCPCB SMT Assembly service - Raspberry Pico RP2040 KiCAD Design](./06.kicad/README.md) | published | [Hakaday](https://hackaday.io/page/11996-prototyping-kicad-designed-rp2040-pcb-using-jlcpcb-smt-assembly)
-The Practical Hardware Design Guide: MSP430] | published | [Hakaday](https://hackaday.io/page/11997-the-practical-hardware-design-guide-msp430)
+The Practical Hardware Design Guide: MSP430 | published | [Hakaday](https://hackaday.io/page/11997-the-practical-hardware-design-guide-msp430)
 [The Practical Hardware Design Guide: BLDC Motor Driver Design and Prototyping with JLCPCB SMT Assembly Service](./08.bldc-driver/README.md) | writing | .
