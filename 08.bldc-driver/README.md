@@ -1,1 +1,2 @@
-# [JLCPCB][1] SMT Assembly service - BLDC Motor Driver Design with MSP430 Microcontroller
+# The Practical Hardware Design Guide: BLDC Motor Driver Design and Prototyping with JLCPCB SMT Assembly Service
+
